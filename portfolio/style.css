@@ -11,7 +11,7 @@ body {
 
 header {
 	background-color: #Ebe3e0;
-
+	
 }
 
 
@@ -22,11 +22,16 @@ h1 {
 	display: block;
 	float: left;
 	width: 800px;
-	padding: 40px 0;
+	padding: 30px 0 0 0;
 	margin: 0;
 	
 }
 
+nav {
+	margin: 0px;
+	padding: 0px;
+	height: 70px;
+}
 
 a {
 	text-decoration: none;	
@@ -76,16 +81,11 @@ footer {
 .column {
 	display: inline-block;
 	width:600px;
-	/*margin:auto;*/
-	/*padding: 15px 0;*/
-	/*border-style: solid;
-	border-color: #2B3856;*/
 	height: 250px;
 }
 
 .column img {
-	/*text-align: center;
-	display: block;*/
+	
 	
 }
 
@@ -108,7 +108,7 @@ footer {
 
 
 #logo {
-	padding: 30px;
+	padding: 20px 30px 0 30px;
 	display: block;
 	float: left;
 }
@@ -117,13 +117,14 @@ footer {
 #nav_home {
 	font-family: 'Raleway', Sans-Serif;
 	background-color: #Ebe3e0;
-	/*margin: auto;
-	height: 80px;*/
 
 }
 
 #main_quotation {
-	margin: 35px 0;
+	margin: 0 auto;
+	padding: 10px;
+	width: 950px;
+	
 }
 
 
