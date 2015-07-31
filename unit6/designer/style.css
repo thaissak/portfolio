@@ -7,24 +7,24 @@
 
 
 body {
-	background-color: #fff; #FFFFB1 (light yellow) #FBF6D9 (pink) #6AFB92 (green) #FFFF33 (yellow) #EBFFE0 (light green)
+	background-color: #EFEEEC; /*#FFFFB1 (light yellow) #FBF6D9 (pink) #EBFFE0 (light green)*/
 	margin: 0;
 
 
 }
 
 h1 {
-	font-family: 'Bevan', serif;
+	font-family: 'Luckiest Guy', serif;
 	font-size: 45px;
 	letter-spacing: 1.5px;
-	color: #0570f4; /*#2B547E;*/
+	color: #2B547E;
 	margin: 0;
 }
 
 hr {
 	width: 295px;
 	height: 3px;
-	background-color: #0570f4; /*#2B547E;*/
+	background-color: #2B547E;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -35,7 +35,7 @@ h2 {
 	font-family: 'Indie Flower', Sans-Serif;
 	font-size: 30px;
 	letter-spacing: 1px;
-	color: #0570f4; /*#2B547E;*/
+	color: #2B547E;
 	margin: 0 auto;
 	padding: 0 18px 0 18px;
 
@@ -55,7 +55,7 @@ main {
 
 h4 {
 	font-weight: normal;
-	color: #0570f4; /*#2B547E;*/
+	color: #2B547E;
 
 }
 
@@ -95,7 +95,7 @@ h4 {
 }
 
 #login_hp {
-	background-color: #0570f4; /*#2B547E;*/
+	background-color: #2B547E;
 	font-family: 'Indie Flower', Sans-Serif;
 	font-size: 22px;
 	letter-spacing: 2.5px;
@@ -138,7 +138,7 @@ h4 {
 	color: #fff;
 	letter-spacing: 0.2em;
 	/*text-align: center;*/
-	background-color: #0570f4; /*#2B547E;*/	
+	background-color: #2B547E;
 	box-sizing: border-box;
 	/*width: 900px;
 	height: 30px;*/	
