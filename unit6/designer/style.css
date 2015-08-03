@@ -65,7 +65,7 @@ h3 {
 	font-size: 22px;
 	color: #2B547E;
 	text-align: center; 
-	background-color: #E9E7E6;
+	
 }
 
 section {
@@ -104,6 +104,7 @@ footer {
 	text-align: center;
 	letter-spacing: 0.5px;
 	clear: both;
+	padding-top: 20px;
 }
 
 h5 {
@@ -139,36 +140,48 @@ h5 {
 	font-weight: 600;
 }
 
-.dogimg {
-	width: 413px;
-	height: 250px;
-	margin: 0;
-	padding: 0;
-	
-}
 
-.doginfo {
-	width: 413px;
-	height: 280px;
-	margin: 0;
-	padding: 0;
-	
-	
-}
+.wrap_columns {
+	padding: 20px 30px;
+	margin: 0 auto;
 
-.ownerlink {
-	width: 413px;
-	height: 25px;
-	margin:0;
-	padding: 0;
-	
 }
 
 .column {
 	float: left;
 	margin: 0;
+	border: 2px solid #2B547E;
+	background-color: #D5D3D2;
 	
 }
+
+.dogimg {
+	width: 413px;
+	height: 260px;
+	margin: 0;
+	padding: 5px 136px;
+	box-sizing: border-box;
+	
+}
+
+.doginfo {
+	width: 413px;
+	height: 290px;
+	margin: 0;
+	padding: 0 20px;
+	box-sizing: border-box;	
+	
+}
+
+.ownerlink {
+	width: 413px;
+	height: 35px;
+	margin:0;
+	padding: 0 20px 5px 20px;
+	box-sizing: border-box;	
+	
+}
+
 
 
 #logo {
@@ -233,6 +246,12 @@ h5 {
 
 #cta_hp:hover {
 	padding: 15px;
+
+}
+
+#results_title {
+	padding: 0 30px;
+	margin: 0;
 
 }
 
