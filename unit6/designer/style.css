@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 @import url(http://fonts.googleapis.com/css?family=Dosis);
-@import url(http://fonts.googleapis.com/css?family=Bevan);
+/*@import url(http://fonts.googleapis.com/css?family=Bevan);*/
 
 
 
 
 body {
-	background-color: #EFEEEC; /*#FFFFB1 (light yellow) #FBF6D9 (pink) #EBFFE0 (light green)*/
+	background-color: #EFEEEC; /*#FFFFB1 (light yellow) #FBF6D9 (light pink) #EBFFE0 (light green)*/
 	margin: 0;
 
 
@@ -60,6 +60,56 @@ h4 {
 }
 
 
+h3 {
+	font-weight: normal;
+	font-size: 22px;
+	color: #2B547E;
+	text-align: center; 
+	background-color: #E9E7E6;
+}
+
+section {
+	width: 423px;
+	height: 565px;
+	margin: 0;
+	padding: 5px;
+	display: inline-block;
+	box-sizing: border-box;
+
+	
+}
+
+section img {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 413px;
+	max-height: 250px;
+	
+}
+
+
+ul {
+	list-style: none;
+	font-size: 18px;
+	text-align: left;
+	color: #2B547E;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	font-family: 'Indie Flower', Sans-Serif;
+	font-size: 16px;
+	color: #2B547E;
+	text-align: center;
+	letter-spacing: 0.5px;
+	clear: both;
+}
+
+h5 {
+	font-weight: 500;
+}
+
 .wrap_header {
 	height: 150px;
 	
@@ -84,6 +134,42 @@ h4 {
 
 }
 
+.a_default {
+	color: #2B547E;
+	font-weight: 600;
+}
+
+.dogimg {
+	width: 413px;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.doginfo {
+	width: 413px;
+	height: 280px;
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+.ownerlink {
+	width: 413px;
+	height: 25px;
+	margin:0;
+	padding: 0;
+	
+}
+
+.column {
+	float: left;
+	margin: 0;
+	
+}
+
 
 #logo {
 	padding: 25px 10px 0 30px;
@@ -94,7 +180,7 @@ h4 {
 
 }
 
-#login_hp {
+#login {
 	background-color: #2B547E;
 	font-family: 'Indie Flower', Sans-Serif;
 	font-size: 22px;
@@ -114,7 +200,7 @@ h4 {
 }
 
 
-#login_hp:hover {
+#login:hover {
 	padding: 6px;
 }
 
@@ -137,11 +223,8 @@ h4 {
 	font-weight: bold;
 	color: #fff;
 	letter-spacing: 0.2em;
-	/*text-align: center;*/
 	background-color: #2B547E;
 	box-sizing: border-box;
-	/*width: 900px;
-	height: 30px;*/	
 	margin: 0 424px;
 	padding: 10px;
 	border-radius: 10px;
@@ -152,6 +235,13 @@ h4 {
 	padding: 15px;
 
 }
+
+#location {
+	font-weight: bold;
+	color: #2B547E;
+}
+
+
 
 
 
