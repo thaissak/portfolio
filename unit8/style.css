@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Limelight);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+
+body {
+	font-family: 'Muli', Sans-Serif;
+	background-color: #Ebe3e0;
+	color: #2B3856;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+h1 {
+	font-family: 'Limelight', Serif;
+	font-size: 4em;
+	font-weight: bold;
+}
+
+hr {
+	height: 5px;
+	background-color: #2B3856;
+}
+
+h2 {
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 2em;
+	line-height: 1em;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.quotation {
+	font-size: 1.1em;
+	line-height: 1.5em;
+
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0px;
+	content: " ";
+	clear: both;
+	height: 0px;
+}
+
+#wrap_main {
+	float: left;
+	max-width: 60%;
+	box-sizing: border-box;
+	margin: 5% 1% 0 7%;
+}
+
+#title {
+	width: 100%;
+	padding: 0 0 5% 0;
+
+}
+
+#quote {
+	width: 65%;
+	padding: 13% 17.5% 9% 17.5%;
+}
+
+#cta {
+	width: 65%;
+	padding: 3% 1%;
+	margin: 0 17.5%;
+	background-color: #baa3cf;
+	border: 0.3em solid #6A537F;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+#cta:hover {
+	font-size: 1.1em;
+	border: 0.35em solid #6A537F;
+}
+
+#avatar {
+	padding: 9% 7% 0 0 ;
+}
+
+
+@media only screen and (max-width: 1215px) and (min-width: 1203px) {
+
+	#avatar {
+		padding: 9% 5% 0 0;
+	}
+}
+
+@media only screen and (max-width: 1202px) and (min-width: 875px) {
+	#wrap_main {
+		max-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 874px) and (min-width: 320px) {
+	#wrap_main {
+		max-width: 100%;
+		margin: 5%;
+	}
+
+	#avatar {
+		display: none;
+		content: " ";
+		visibility: hidden;
+	}
+
+}
+
+@media only screen and (max-width:455px) and (min-width:320px) {
+	#quote {
+	width: 75%;
+	padding: 13% 12.5% 9% 12.5%;
+
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
