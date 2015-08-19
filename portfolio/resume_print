@@ -18,23 +18,11 @@
 
 		<a href="home.html"><img src="images/logo.png" alt="Thaissa's Geek logo" title="Thaissa Kobayashi" width="100px"></a>
 
-		<h1>Thaissa Kobayashi</h1>
-		
-
-		<nav>
-			<a class="menu" href="projects.html">Projects</a>
-			<a class="menu" href="resume.html">Resume</a>
-			<a class="menu" href="about.html">About me</a>
-			<a class="menu" href="contacts.html">Contacts</a>
-		</nav>
-
 	</header>
 
 	<main>
 
 		<h2>Resume</h2>
-
-		<a href="resume_print"><img src="images/print.png" width="30px"></a>
 
 		<h3>Looking for awesome opportunities to work as a Web Designer and Front-end Developer. I'm currently enrolled in General Assembly Web Design Circuits, working full-time in my design and front-end development skills. Also, I have great experience in cross area communication (technical and non-technical), software quality assurance and business analysis.</h3>
 
@@ -101,16 +89,9 @@
 		<li>Animal protector lover, passionate amateur chef, interested and intrigued by human behavior</li>
 		</ul>
 	
-		<a href="resume_print"><img src="images/print.png" width="30px"></a>
+		<a href="resume.html">Close printable version</a>
 
 	</main>
-
-
-	<footer>
-		
-		<h5>&copy; 2015 Thaissa Kobayashi</h5>
-
-	</footer>
 
 
 </body>

@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Limelight);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
 
 body {
 	font-family: 'Muli', Sans-Serif;
@@ -20,7 +22,7 @@ h1 {
 
 hr {
 	height: 5px;
-	background-color: #2B3856;
+	background-color: #Ebe3e0;
 }
 
 h2 {
@@ -35,101 +37,65 @@ a {
 	color: inherit;
 }
 
+footer {
+	font-size: 0.8em;
+	/*clear: both;*/
+}
+
 .quotation {
-	font-size: 1.1em;
+	font-family: 'Dancing Script', Sans-Serif;
+	font-size: 1.7em;
+	letter-spacing: 0.07em;
 	line-height: 1.5em;
+}
+
+
+
+.cta {
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
+	color: #2B3856;
+	background-color: #Ebe3e0;
+	/*width: 50%;*/
+	padding: 2% 12.5%;
 
 }
 
-.clearfix:after {
+/*.clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0px;
 	content: " ";
 	clear: both;
 	height: 0px;
+}*/
+
+#home {
+	background-color: #2B3856;
+	color: #Ebe3e0;
+	margin: 5% 5% 1% 5%;
 }
 
-#wrap_main {
-	float: left;
-	max-width: 60%;
-	box-sizing: border-box;
-	margin: 5% 1% 0 7%;
-}
-
-#title {
-	width: 100%;
-	padding: 0 0 5% 0;
-
+#header_home {
+	width: 66%;
+	padding: 5% 17% 8% 17%;
 }
 
 #quote {
-	width: 65%;
-	padding: 13% 17.5% 9% 17.5%;
+	width: 95%;
+	padding: 0 2.5% 5% 2.5%;
 }
 
-#cta {
-	width: 65%;
-	padding: 3% 1%;
-	margin: 0 17.5%;
-	background-color: #baa3cf;
-	border: 0.3em solid #6A537F;
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
-
-#cta:hover {
-	font-size: 1.1em;
-	border: 0.35em solid #6A537F;
-}
-
-#avatar {
-	padding: 9% 7% 0 0 ;
+#wrap_cta {
+	width: 95%;
+	padding: 0 2.5% 1% 2.5%;
 }
 
 
-@media only screen and (max-width: 1215px) and (min-width: 1203px) {
 
-	#avatar {
-		padding: 9% 5% 0 0;
-	}
-}
 
-@media only screen and (max-width: 1202px) and (min-width: 875px) {
-	#wrap_main {
-		max-width: 50%;
-	}
-}
-
-@media only screen and (max-width: 874px) and (min-width: 320px) {
-	#wrap_main {
-		max-width: 100%;
-		margin: 5%;
-	}
-
-	#avatar {
-		display: none;
-		content: " ";
-		visibility: hidden;
-	}
-
-}
-
-@media only screen and (max-width:455px) and (min-width:320px) {
-	#quote {
-	width: 75%;
-	padding: 13% 12.5% 9% 12.5%;
-
-	}
-
-	h1 {
-		font-size: 3em;
-	}
-
-	h2 {
-		font-size: 1.5em;
-	}
-}
+/*@media only screen and (max-width:) and (min-width:) {
+	
+}*/
 
