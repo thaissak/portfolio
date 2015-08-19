@@ -32,7 +32,6 @@ h2 {
 	line-height: 1em;
 }
 
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -66,14 +65,26 @@ footer {
 
 }
 
-/*.clearfix:after {
+.menu {
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 1.5em;
+	display: inline-block;
+	width: 24%;
+
+}
+
+.unchecked:hover {
+	font-size: 1.7em;
+}
+
+.clearfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0px;
 	content: " ";
 	clear: both;
 	height: 0px;
-}*/
+}
 
 #home {
 	background-color: #2B3856;
@@ -86,6 +97,7 @@ footer {
 	padding: 5% 17% 6% 17%;
 }
 
+
 #quote {
 	width: 95%;
 	padding: 0 2.5% 5% 2.5%;
@@ -96,7 +108,34 @@ footer {
 	padding: 0 2.5%;
 }
 
+#wrap_header {
+	width: 90%;
+	padding: 2% 5% 1% 5%;
+	background-color: #2B3856;
+	color: #Ebe3e0;
+	text-align: left;
+}
 
+#logo {
+	float: left;
+	padding: 0 1% 0 0;
+}
+
+#title {
+	padding: 2.8% 0;
+	font-size: 3.5em;
+}
+
+#nav_menu {
+	width: 100%;
+	display: inline-block;
+}
+
+#checked {
+	font-size: 1.7em;
+	color: #53607E;
+
+}
 
 
 /*@media only screen and (max-width:) and (min-width:) {
