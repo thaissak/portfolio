@@ -23,6 +23,7 @@ h1 {
 hr {
 	height: 5px;
 	background-color: #Ebe3e0;
+	border-radius: 5px;
 }
 
 h2 {
@@ -39,7 +40,7 @@ a {
 
 footer {
 	font-size: 0.8em;
-	/*clear: both;*/
+	padding-top: 3%;
 }
 
 .quotation {
@@ -57,8 +58,11 @@ footer {
 	letter-spacing: 0.1em;
 	color: #2B3856;
 	background-color: #Ebe3e0;
-	/*width: 50%;*/
-	padding: 2% 12.5%;
+	width: 25%;
+	padding: 2% 12%;
+	margin: 0.5% 0.25%;
+	display: inline-block;
+	border-radius: 10px;
 
 }
 
@@ -74,12 +78,12 @@ footer {
 #home {
 	background-color: #2B3856;
 	color: #Ebe3e0;
-	margin: 5% 5% 1% 5%;
+	margin: 1% 5%;
 }
 
 #header_home {
 	width: 66%;
-	padding: 5% 17% 8% 17%;
+	padding: 5% 17% 6% 17%;
 }
 
 #quote {
@@ -89,7 +93,7 @@ footer {
 
 #wrap_cta {
 	width: 95%;
-	padding: 0 2.5% 1% 2.5%;
+	padding: 0 2.5%;
 }
 
 
