@@ -209,18 +209,9 @@ footer {
 	padding: 1% 0;
 }
 
-.about_img {
-	float: left;
-	width: 48.5%;
-	margin: 0 1.5% 0 0;
-}
-
-.about_img img {
-	padding: 0.5% 26% 0 26%;
-}
-
 .about_title {
-	font-weight: bold;
+	width: 100%;
+	padding: 0 0 0 12%;
 }
 
 .clearfix:after {
