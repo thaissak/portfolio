@@ -223,6 +223,18 @@ footer {
 	font-weight: bold;
 }
 
+.contact {
+	padding: 0 0 1% 0;
+
+}
+
+.contact_icon {
+	float: left;
+	padding: 0 1% 4% 0;
+	width: 7%;
+
+}
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -354,6 +366,19 @@ footer {
 	list-style-position: inside;
 	line-height: 1.5em;
 }
+
+#wrap_contacts {
+	width: 90%;
+	padding: 0 5%;
+	text-align: left;
+
+}
+
+#contact2 {
+	clear: both;
+}
+
+
 
 
 
