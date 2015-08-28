@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+
+body {
+	font-size: 18px;
+	background-color: #FFFFC4;
+	text-align: center;
+
+}
+
+h1 {
+	font-family: 'Cinzel Decorative', serif;
+	font-size: 2.3em;
+	color: #F2C12E; #FFAC00; 
+}
+
+h2 {
+	font-family: 'Alex Brush', serif;
+	font-size: 2.3em;
+	letter-spacing: 0.5px;
+	color: #F2C12E; 
+}
+
+nav {
+	font-family: 'Quattrocento', serif;
+	font-size: 1em;
+	line-height: 2em;
+	background-color: #F2C12E;
+	color: #FFFFC4;
+
+}
+
+label{
+  display:block;
+  padding: 1%;
+}
+
+label img {
+	width: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+footer {
+	color: #F2C12E;
+	letter-spacing: 0.5px;
+}
+
+.clearfix {
+	visibility: hidden;
+	display: block;
+	content: " ";
+	font-size: 0px;
+	height: 0px;
+	clear: both;
+
+}
+
+#wrap_header {
+	width: 100%;
+	padding: 1% 2%;
+}
+
+#input{
+  display:none;
+}
+
+#menu{
+  display:none;
+  padding:0 0 1% 0;
+}
+
+#input:checked + #menu{
+  display:block;
+}
+
