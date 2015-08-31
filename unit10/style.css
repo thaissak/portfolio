@@ -5,53 +5,119 @@
 
 body {
 	font-size: 18px;
-	background-color: #FFFFC4;
+	background-color: #FFFFCC;
 	text-align: center;
 
 }
 
+
 h1 {
 	font-family: 'Cinzel Decorative', serif;
 	font-size: 2.3em;
-	color: #F2C12E; #FFAC00; 
+	color: #FF7F57;  
 }
 
 h2 {
 	font-family: 'Alex Brush', serif;
 	font-size: 2.3em;
 	letter-spacing: 0.5px;
-	color: #F2C12E; 
+	color: #FF7F57;  
+}
+
+h3 {
+	font-family: 'Quattrocento', serif;
+	font-size: 1.6em;
+	color: #FF9700;
+	padding: 2% 0;
+}
+
+h4 {
+	font-family: 'Quattrocento', serif;
+	font-size: 1em;
+	color: #FF9700;
+
 }
 
 nav {
 	font-family: 'Quattrocento', serif;
 	font-size: 1em;
 	line-height: 2em;
-	background-color: #F2C12E;
-	color: #FFFFC4;
+	color: #FF9700;
 
 }
 
-label{
+/*label{
   display:block;
   padding: 1%;
 }
 
 label img {
 	width: 5%;
-}
+}*/
 
 a {
 	text-decoration: none;
 	color: inherit;
+	
+}
+
+section {
+	width: 96%;
+	border: 2px solid #FF9700;
+	border-radius: 5px;
+	margin: 1% 2%;
+	box-sizing: border-box;
+	padding-bottom: 1%;
+	float: left;
+
+}
+
+section img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+p {
+	font-family: 'Quattrocento', serif;
+	font-size: 0.8em;
+	line-height: 1.5em;
+
 }
 
 footer {
 	color: #F2C12E;
 	letter-spacing: 0.5px;
+	clear: both;
 }
 
-.clearfix {
+.menu_option {
+	margin: 0 1% 0 1%;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #FF9700;
+	padding-bottom: 0.5%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/*.wrap_list {
+	float: left;
+}*/
+
+.location {
+	width: 100%;
+	padding: 1%;
+}
+
+.item {
+	width: 23%;
+	padding: 0%;
+	margin: 0 1% 1%;
+	float: left;
+}
+
+.clearfix:after {
 	visibility: hidden;
 	display: block;
 	content: " ";
@@ -64,18 +130,95 @@ footer {
 #wrap_header {
 	width: 100%;
 	padding: 1% 2%;
+	box-sizing: border-box;
 }
 
-#input{
-  display:none;
+#wrap_title {
+	width: 100%;
+
 }
+
+#wrap_menu {
+	width: 100%;
+	
+}
+
+/*#input{
+  display:none;
+}*/
 
 #menu{
-  display:none;
-  padding:0 0 1% 0;
+  padding: 1% 0 0 0;
 }
 
-#input:checked + #menu{
+/*#input:checked + #menu{
   display:block;
+  background-color: #F2C12E;
+}*/
+
+#hero {
+	width: 96%;
+	border: 3px solid #FF9700;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin: 1% 2%;
+
 }
+
+#hero img {
+	width: 100%;
+
+}
+
+#wrap_about {
+	width: 80%;
+	box-sizing: border-box;
+	margin: 2% 10%;
+	padding: 2% 0;
+	border: 3px solid #FF9700;
+	border-radius: 5px;
+}
+
+#wedding {
+	width: 100%;
+	
+}
+
+#wedding img {
+	width: 50%;
+	border-radius: 5px;
+}
+
+#main_desc {
+	color: #FF9700;
+	text-align: left;
+	width: 96%;
+	padding: 1% 2%;
+	letter-spacing: 1px;
+}
+
+
+#wrap_contact {
+	border: 3px solid #FF9700;
+	border-radius: 5px;
+	width: 50%;
+	padding: 5% 10%;
+	margin: 5% 15%;
+}
+
+#contact {
+	color: #FF9700;
+	text-align: center;
+	width: 96%;
+	padding: 1% 2%;
+	letter-spacing: 1px;
+	line-height: 2em;
+	font-size: 1em;
+}
+
+#email {
+	color: #FF7F57;
+	text-decoration: underline;
+}
+
 
