@@ -7,8 +7,8 @@ body {
 	font-size: 18px;
 	background-color: #FFFFCC;
 	text-align: center;
-	/*position: relative;*/
-
+	position: relative;
+	
 }
 
 
@@ -47,6 +47,10 @@ nav {
 
 }
 
+main {
+	height: 100vh;
+}
+
 /*label{
   display:block;
   padding: 1%;
@@ -70,7 +74,6 @@ section {
 	margin: 1% 2%;
 	box-sizing: border-box;
 	padding-bottom: 1%;
-	float: left;
 
 }
 
@@ -92,8 +95,8 @@ footer {
 	letter-spacing: 0.5px;
 	clear: both;
 	width:100%;
-	/*position: absolute;
-	bottom: 20px;*/
+	position: absolute;
+	bottom: 15px;
 }
 
 .menu_option {
@@ -155,6 +158,7 @@ footer {
 
 #menu{
   padding: 1% 0 0 0;
+  
 }
 
 /*#input:checked + #menu{
@@ -178,9 +182,9 @@ footer {
 }
 
 #wrap_about {
-	width: 80%;
+	width: 54%;
 	box-sizing: border-box;
-	margin: 2% 10%;
+	margin: 2% 23%;
 	padding: 2% 0;
 	border: 3px solid #FF9700;
 	border-radius: 5px;
@@ -192,34 +196,34 @@ footer {
 }
 
 #wedding img {
-	width: 50%;
+	width: 92%;
 	border-radius: 5px;
 }
 
 #main_desc {
 	color: #FF9700;
 	text-align: left;
-	width: 96%;
-	padding: 1% 2%;
+	width: 92%;
+	padding: 1% 4%;
 	letter-spacing: 1px;
+	text-align: justify;
 }
 
 
 #wrap_contact {
 	border: 3px solid #FF9700;
 	border-radius: 5px;
-	width: 50%;
-	padding: 5% 10%;
-	margin: 5% 15%;
+	width: 40%;
+	padding: 4%;
+	margin: 5% 26%;
 }
 
 #contact {
 	color: #FF9700;
 	text-align: center;
 	width: 96%;
-	padding: 1% 2%;
 	letter-spacing: 1px;
-	line-height: 2em;
+	line-height: 2.5em;
 	font-size: 1em;
 }
 
@@ -229,11 +233,34 @@ footer {
 }
 
 
-@media only screen and (max-width:1036px) and (min-width:320px) {
+/*@media only screen and (max-width:1036px) and (min-width:320px) {
 
 	footer {
 		position: absolute;
 		bottom: 20px;
+	}
+
+}
+
+
+@media only screen and (max-width:861px) and (min-width:665px) {
+
+	#wrap_contact {
+		width: 60%;
+		padding: 5% 7%;
+		margin: 5% 13%;
+
+	}
+
+}
+
+@media only screen and (max-width:675px) and (min-width:320px) {
+
+	#wrap_contact {
+		width: 52%;
+		padding: 5% 12%;
+		margin: 5% 12%;
+
 	}
 
 }
@@ -253,6 +280,11 @@ footer {
 		line-height: 2.3em;
 	}
 
+	#wrap_contact {
+		margin: 5% 10% 5% 8%;
+
+	}
+
 }
 
 @media only screen and (max-width:405px) and (min-width:320px) {
@@ -266,6 +298,6 @@ footer {
 		line-height: 2.2em;
 	}
 
-}
+}*/
 
 
