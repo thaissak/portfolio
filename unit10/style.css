@@ -95,8 +95,8 @@ footer {
 	letter-spacing: 0.5px;
 	clear: both;
 	width:100%;
-	position: absolute;
-	bottom: 15px;
+	position: relative;
+	bottom: 0px;
 }
 
 .menu_option {
@@ -266,6 +266,14 @@ footer {
 	padding: 2% 3%;
 	letter-spacing: 1px;
 	text-align: justify;
+}
+
+#footer1 {
+	height: 110vh;
+}
+
+#footer2 {
+	height: 225vh;
 }
 
 
