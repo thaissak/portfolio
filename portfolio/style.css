@@ -54,12 +54,6 @@ p {
 	text-align: left;
 }
 
-footer {
-	font-size: 0.8em;
-	padding: 3% 0 0.5% 0;
-	clear: both;
-}
-
 .quotation {
 	font-family: 'Dancing Script', Sans-Serif;
 	font-size: 1.7em;
@@ -206,7 +200,7 @@ footer {
 }
 
 .section {
-	padding: 0 0 1.5% 0;
+	padding: 0 0 2% 0;
 }
 
 .section_title {
@@ -224,10 +218,12 @@ footer {
 	float: left;
 	width: 48.5%;
 	margin: 0 1.5% 0 0;
+	height: 80%;
 }
 
 .about_img img {
-	padding: 0.5% 26% 0 26%;
+	padding: 0.5% 26.5% 0 26.5%;
+	width: 53%;
 }
 
 .about_title {
@@ -404,8 +400,30 @@ footer {
 
 
 
-
-/*@media only screen and (max-width:) and (min-width:) {
+@media only screen and (max-width: 800px) {
 	
-}*/
+	.cta {
+		width: 30%;
+		padding: 2% 8%;
+	}
+
+	.menu {
+		width: 17%;
+	}
+
+	.project_msg {
+		height: 100vh;
+	}
+
+	.about_img img {
+		padding: 0.5% 27.5% 0 27.5%;
+    	width: 45%;
+	}
+
+	#logo {
+		padding: 2.5% 2% 0 0;
+	}
+
+
+}
 
