@@ -101,18 +101,7 @@ footer {
 	font-size: 1.6em;
 }
 
-.project_msg {
-	width: 100%;
-	height: 100%;
-
-}
-
-.project_msg img {
-	width: 100%;
-	display: block;
-}
-
-/*.project_box {
+.project_box {
 	width: 31.33%;
 	padding: 1%;
 	margin: 0 1%;
@@ -122,9 +111,9 @@ footer {
 	float: left;
 	box-sizing: border-box;
 
-}*/
+}
 
-/*.project_box img {
+.project_box img {
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -132,16 +121,16 @@ footer {
 .project_box a {
 	font-size: 0.9em;
 	text-decoration: underline;
-}*/
+}
 
-/*.project_details {
+.project_details {
 	width: 100%;
 	padding: 0 0 4% 0;
 }
 
 .project_details img {
 	width: 100%;
-}*/
+}
 
 .left_img {
 	width: 50%;
@@ -328,7 +317,7 @@ footer {
 	font-weight: bold;
 }
 
-/*#wrap_projects {
+#wrap_projects {
 	width: 92%;
 	padding: 0 4%;
 }
@@ -339,8 +328,6 @@ footer {
 	padding: 3% 0 0 0;
 	letter-spacing: 0.5px;
 }
-*/
-
 
 #wrap_details {
 	width: 90%;
@@ -350,11 +337,6 @@ footer {
 #main_desc {
 	width: 100%;
 	padding: 0 0 4% 0;
-
-}
-
-#main_desc p {
-	text-align: justify;
 }
 
 #clear_buttons {
