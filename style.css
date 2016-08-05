@@ -1,0 +1,392 @@
+@import url(http://fonts.googleapis.com/css?family=Limelight);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
+/*GENERAL TEXT AND COLOR STYLE*/
+
+/*nav bar title only*/
+h1{
+	font-family: 'Limelight', Serif;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+/*page title and menu*/
+h2{
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 2em;
+}
+
+
+/*subtitles only*/
+h4{
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 1.2em;
+}
+
+/*contacts only*/
+h3{
+	font-family: 'Muli', Sans-Serif;
+	font-size: 1.5em;
+	letter-spacing: 1.3px;
+}
+
+/*footer only*/
+h5{
+	font-family: 'Muli', Sans-Serif;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+}
+
+p{
+	font-family: 'Muli', Sans-Serif;
+	font-size: 1em;
+	text-align: left;
+}
+
+q{
+	font-family: 'Muli', Sans-Serif;
+	font-size: 0.8em;
+	letter-spacing: 0.07em;
+}
+
+li{
+	font-family: 'Muli', Sans-Serif;
+}
+
+a{
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 1.5em;
+	letter-spacing: 1.3px;
+}
+
+/*projects info only*/
+label{
+	font-family: 'Raleway', Sans-Serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	background-color: #2B3856;
+	color: #Ebe3e0;
+}
+
+span{
+	font-weight: bold;
+}
+
+header{
+	background-color: #2B3856;
+	color: #Ebe3e0;
+}
+
+
+#home, #resume, #contacts, footer{
+	background-color: #Ebe3e0;
+	color: #2B3856;
+}
+
+#portfolio, #about{
+	background-color: #f9edeb;
+	color: #2B3856;
+}
+
+/*JQUERY*/
+
+.hidden{
+	display: none;
+}
+
+/*HEADER*/
+
+header{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 0% 2.5%;	
+}
+
+h1{
+	width: 28%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.3% 1% 0% 0.5%;
+}
+
+#logo{
+	width: 5%;
+	margin: 0.5% 0% 0% 0%;
+}
+
+#menu{
+	display: inline-block;
+	width: 34%;
+	height: auto;
+	vertical-align: top;
+	margin-left: 30%;
+	margin-top: 0.5%;
+}
+
+#menu ul{
+	display: inline;
+
+}
+
+#menu li{
+	display: inline-block;
+	vertical-align: top;
+    margin: 0.5% 1%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    letter-spacing: 1px;
+
+}
+
+
+.checked{
+	color: #F59631;
+	border-bottom: 2px solid #F59631;
+}
+
+/*SECTION HOME*/
+
+#home h2{
+	width: 67%;
+	padding: 1%;
+	text-align: center;
+	margin: 0% 15.5%;
+}
+
+#home h4{
+	text-align: center;
+	color: #2B3856;
+}
+
+.quote {
+	margin: 0% 0% 1% 0%;
+}
+
+#home p{
+	text-align: center;
+}
+
+#slideShow{
+	width: 72%;
+	margin: 0% 14%;
+	
+}
+
+#slideShow img{
+	width: 46%;
+	margin: 0% 11%;
+
+}
+
+#slideShow a{
+	font-size: 2em;
+    background-color: #2B3856;
+    color: #Ebe3e0;
+    border-radius: 100%;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 20%
+}
+
+#arrow_left{
+	padding: 0.2% 1% 0.2% 1%;
+	margin-left: 13.5%;
+	
+}
+
+#arrow_right{
+	padding: 0.2% 1.1% 0.2% 1.3%;
+	
+}
+
+.hidden{
+	display: none;
+}
+
+
+/*SECTION PORTFOLIO*/
+
+label{
+	padding: 2% 3%;
+	margin: 1% 1%;
+	border-radius: 45%;
+	display: inline-block;
+}
+
+#portfolio h2{
+	width: 30%;
+	padding: 1%;
+	text-align: center;
+	margin: 0% 34%;
+
+}
+
+#portfolio_wrapper{
+	margin: 2% 18%;
+}
+
+.portfolio_desc{
+	width: 45%;
+	height: auto;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0% 2.3%
+	
+}
+
+.portfolio_desc img{
+	width: 100%;
+	height: 45%
+
+}
+
+.portfolio_desc h4, .project_desc p{
+	width: 100%;
+	height: 55%;
+}
+
+.portfolio_desc h4{
+	text-align: center;
+	margin: 2%;
+}
+
+/*SECTION RESUME*/
+
+#resume h2{
+	width: 12%;
+	padding: 1%;
+	text-align: center;
+	margin: 0% 43%;
+
+}
+
+#resume p{
+	text-align: justify;
+
+}
+
+#resume p, #resume h4{
+	margin: 1% 0% 0.5% 0%;
+}
+
+#resume p, #resume h4, #resume ul{
+	width: 80%;
+	padding: 0% 10%;
+}
+
+#resume li{
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+#resume li:before{
+	content: "> "
+}
+
+#resume img{
+	width: 4%;
+	margin: 2% 48%;
+}
+
+/*SECTION ABOUT*/
+
+#about h2{
+	width: 30%;
+	padding: 1%;
+	text-align: center;
+	margin: 0% 34%;
+}
+
+#about li p{
+	width: 78%;
+	margin: 0% 11% 2% 11%;
+	text-align: justify;
+}
+
+#about_main{
+	width: 80%;
+	margin:  1% 11% 2% 11%;
+	text-align: justify;
+}
+
+.collapse_on{
+	background-color: #f9edeb;
+	color: #2B3856;
+	width: 79%;
+	margin: 0% 8% 0% 11%;
+	padding: 1% 1%;
+}
+
+.collapse_off{
+	background-color: #Ebe3e0;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+#about h4{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 1%;
+
+}
+
+#about h4 p{
+	width: 78%;
+	margin: 0% 11% 2% 11%;
+}
+
+#about img{
+	width: 4%;
+}
+
+/*SECTION CONTACTS*/
+
+#contacts{
+	padding-bottom: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#contacts h2{
+	width: 15%;
+	padding: 1%;
+	text-align: center;
+	margin: 0% 40%;
+}
+
+.contacts_desc{
+	width: 60%;
+	margin: 10% 20% 2% 20%;
+}
+
+.contacts_desc img{
+	width: 15%;
+}
+
+.contacts_desc img{
+	display: inline-block;
+}
+
+.contacts_desc h3{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5%;
+}
+
+/*FOOTER*/
+
+footer{
+	width: 20%;
+	padding: 2% 40% 0.3% 40%;
+}
+
+
+
+
+
+

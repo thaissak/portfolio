@@ -1,0 +1,35 @@
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+a, img, q, ol, ul, li,form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, figure, figcaption, footer, 
+header, menu, nav, section, summary, time,audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+section{
+	padding: 8% 2.5% 2% 2.5%;
+	/*box-sizing: border-box;*/
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: normal;
+}
+
+p, q{
+	line-height: 1.5em;
+}
