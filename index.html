@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="node_modules/angular-material.min.css">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Thaissa Kobayashi</title>
-		<!-- <meta name:"viewport" content:"width=device-width, initialscale=1">  -->
-		<script type="text/javascript" src="/Users/tkobayashi/Documents/codingdojo/jquery/jquery-1.12.4.js"></script> 
+		<script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script> 
 	    <script type="text/javascript">
 	    $(document).ready(function(){
 	    	// header
@@ -78,25 +78,25 @@
 			<h1>Thaissa Kobayashi</h1>
 			<div id="menu">
 				<ul>
-					<li><a class="unchecked"href="#portfolio">Portfolio</a></li>
-					<li><a class="unchecked" href="#resume">Resume</a></li>
-					<li><a class="unchecked" href="#about">About</a></li>
+					<li><a class="unchecked"href="#home">Home</a></li>
+					<li><a class="unchecked"href="#portfolio">Projects</a></li>
+ 					<li><a class="unchecked" href="#about">About</a></li>
 					<li><a class="unchecked" href="#contacts">Contacts</a></li>
 				</ul>
 			</div>
 		</header>
 
 		<section id="home">
-			<h2>Full Stack Web Developer, Interaction Designer, Geek</h2>
+			<h2>Web Developer, Interaction Designer, Geek</h2>			
 			<div id="slideShow">
 				<a id="arrow_left" onclick="plusDivs(-1)">❮</a>
-				<img class="mySlides" src="images/graph01.svg" alt="Skills">
+				<img class="mySlides" src="images/technologies.png" alt="Skills">
 				<img class="mySlides hidden" src="images/graph02.svg" alt="Skills">
-				<img class="mySlides hidden" src="images/graph03.svg" alt="Skills">
-				<a id="arrow_right" onclick="plusDivs(1)">❯</a>
+<!-- 				<img class="mySlides hidden" src="" alt="Skills">
+ -->				<a id="arrow_right" onclick="plusDivs(1)">❯</a>
 			</div>
-			<h4 class="quote"><q>It's not what we call ourselves that matters, it's the attitude we bring and the skills we can contribute.</q></h4> 
-			<p> - Steve Krug - </p>
+			<!-- <h4 class="quote"><q>It's not what we call ourselves that matters, it's the attitude we bring and the skills we can contribute.</q></h4> 
+			<p> - Steve Krug - </p> -->
 		</section>
 
 		<section id="portfolio">
@@ -122,58 +122,11 @@
 			</div>
 		</section>
 
-		<section id="resume">
-			<h2>Resume</h2>
-			<p>I have a unique set of skills and I’m proud of them. During the last 10 years I had different job titles but the essence was always in understanding clients needs, problem solving and making sure the final product was well executed and neat. I also acquired great knowledge on Web Design and Front-end development in the past 2 years that are quite useful but, mainly, fun to learn.</p>
-			<h4><span>Work Experience</span></h4>
-			<p><span>Business Analyst, +2 years</span></p>
-			<ul>
-				<li>Analysis of business documentation such as use cases, functional and technical requirements</li>
-				<li>Cross area communication, interacting with development, architecture and business teams</li>
-				<li>Developers support, helping them to have a better understanding of the project's scope</li>
-				<li>Global teams relations, interacting with team members in different countries/time-zones</li>
-				<li>Write and Review documentations such as use cases, user guides and requirements</li>
-			</ul>
-			<p><span>Quality Assurance Analyst, +7 years</span></h4>	
-			<ul>
-				<li>Documents Analysis such as use cases, functional and business requirements</li>
-				<li>Cross area communication to solve errors in what was being tested, interacting with developers and business teams</li>
-				<li>Global teams relations, interacting with team members in different countries/time-zones</li>
-				<li>Write and Review Test documentation such as test scenarios, test cases and bugs reports</li>
-			</ul>
-			<h4><span>Education</span></h4>
-			<ul>
-				<li>Certificate of Completion in Business Administration, Universidade Paulista (São Paulo, Brazil) - 2009</li>
-			</ul>
-			<h4><span>Courses, Trainings and Workshops</span></h4>
-			<ul>
-				<li>Full Stack Web Developer Bootcamp, Coding Dojo - 2015</li>
-				<li>Web Design Circuits, General Assembly - 2015</li>
-				<li>User Experience Fundamentals, Noble Desktop - 2015</li>
-				<li>Design Thinking: Creating value on products and services, Fundação Vanzolini/USP - 2013</li>
-				<li>User experience mobile design, Google Workshop - 2013</li>
-				<li>Powerful verbal communication, IIL Workshop - 2012</li>
-				<li>Writing Communication improvements, IIL Workshop - 2012</li>
-				<li>Communication skills and cross-cultural relationships, Cognizant - 2012</li>
-				<li>Business Analysis Skills, Cognizant - 2012</li>
-			</ul>
-			<h4><span>Languages</span></h4>
-			<ul>
-				<li>English (Fluent)</li>
-				<li>Portuguese (Native)</li>
-			</ul>
-			<h4><span>Skills</span></h4>
-			<ul>
-				<li>HTML5, CSS3, Sublime, Illustrator, Responsive Design, Google docs, Microsoft Office</li> 
-				<li>Challenge driven, restless, multi-task, team oriented, communicative, fast learner, leadership</li>
-				<li>Animal protector, passionate amateur chef, interested and intrigued by human behavior</li>
-			</ul>
-			<a href="resume/thaissakobayashi.pdf"><img src="images/download.png" alt="download" title="Clik to download"></a>
-		</section>
+		
 
 		<section id="about">
 			<h2>Beyond work</h2>
-			<p id="about_main">I was born and raised in São Paulo, Brazil. Some people find that hard to believe, because of my asian looks (from my japanese grandparents on my dad's side and my chinese great-grandfather on my mom's side) but that's actually quite common in Brazil, we have one of the largest Japanese colonies outside Japan and a big Chinese community as well. I moved to New York in 2014 and lived there for 1 year, an amazing experience but the sunny and beautiful Bay Area is where I call home now! I love to solve problems in a creative manner and make drawings come to life with elegant coding. Here are few more things you may like to know about me:</p> 
+			<p id="about_main">I was born and raised in São Paulo, Brazil. Some people find that hard to believe, because of my asian looks (from my japanese grandparents on my dad's side and my chinese great-grandfather on my mom's side) but that's actually quite common in Brazil, we have one of the largest Japanese colonies outside Japan and a big Chinese community as well. I moved to New York in 2014 and lived there for 1 year, an amazing experience but the sunny and beautiful Bay Area is where I call home now! I love to solve problems in a creative manner and make drawings come to life with elegant coding. Click the icons below to learn few more things about me:</p> 
 			<ul>
 				<li>
 					<div class="collapse_on">
@@ -187,19 +140,12 @@
 						<img src="images/icon01.png" alt="icon" title="Click me!">
 						<h4>Super Mario is still my favorite video game</h4>
 					</div>
-					<p class="hidden">I lost count of how many hours I spent playing this game! Back when I had my Nintendo Entertainment System, blowing my cartridge to make it work, through my Nintendo 64 and most recently, my Wii.The only break from Mario was to play Street Fighter but eventually I would go back to my old habit. Now, almost 20 years has past...and I still play Super Mario (nonstop) every now and then, not sure if I'll ever get enough!</p>
+					<p class="hidden">I lost count of how many hours I spent playing this game! Back when I had my Nintendo Entertainment System, blowing my cartridge to make it work, through my Nintendo 64 and most recently, my Wii. Back then, the only break from Mario was to play Street Fighter but I would always go back to my sweet and adventurous Mario. Now, almost 20 years has past...and I still play Super Mario (nonstop) every now and then, not sure if I'll ever get enough!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
 						<img src="images/icon01.png" alt="icon" title="Click me!">
-						<h4>My dog's name is Chuck Norris</h4>
-					</div>
-					<p class="hidden">So that's a funny story...When me and my husband got our first dog, he didn't have a name for a few days cause we couldn't figure it out what to call him. He was adorable but we didn't want a cute name or something obvious. So one day we decided to name him Chuck Norris cause that way, even though he is super small, he would be respected!<br>PS: We also have Luke (Skywalker) now, but his name wasn't so fun to figure it out as Chuck's</p>
-				</li>	
-				<li>
-					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
-						<h4>I love movies</h4>
+						<h4>Movies are my thing</h4>
 					</div>
 					<p class="hidden">During my free time you can usually find me either watching a movie on TV or at the movie theater. That's probably my favorite thing to do and I can't stay away for too long. I think you can imagine some of the movies I love but, honestly, I'm up for almost all genres and love to watch something that makes me reflect on my own life (thinking on how cool it would be to have superpowers counts right?) and I hate to wait for any sequel...I mean, who likes to wait for a sequel, right?!</p>
 				</li>
@@ -215,7 +161,7 @@
 						<img src="images/icon01.png" alt="icon" title="Click me!">
 						<h4>Fascinated by human behavior, sociology and philosophy</h4>
 					</div>
-					<p class="hidden">I was fortunate to have philosophy classes during High School and that opened a door that I never intend to close. My taste for philosophical books evolved to human behavior ones and, more specifically, when concerns different cultures, social values and human nature. If I have the time, I will get a new book on the subject and read it nonstop, the last one was Quiet - The Power of Introverts in a World That Can't Stop Talking, by Susan Cain.</p>
+					<p class="hidden">I was fortunate to have philosophy classes during High School and that opened a door that I never intend to close. My taste for philosophical books evolved to human behavior and, more specifically, when concerns different cultures, social values and human nature. If I have the time, I will get a new book on the subject and read it nonstop, the last one was Quiet - The Power of Introverts in a World That Can't Stop Talking, by Susan Cain (a must read book in my opinion!).</p>
 				</li>				
 			</ul>	
 		</section>
@@ -227,8 +173,16 @@
 				<h3>Connect with me on Linkedin</h3>
 			</div>
 			<div class="contacts_desc">
-				<a href=""><img src="images/email.png" alt="Email"></a>
-				<h3>Send me an e-mail</h3>
+				<a href="https://docs.google.com/forms/d/1hQImewTjOaZDKHICiljKIGKlh7cLG0RrdYQtBQOV87Y/edit"><img src="images/email.png" alt="Email"></a>
+				<h3>Send me a message</h3>
+			</div>
+			<div class="contacts_desc">
+				<a href="https://github.com/thaissak"><img src="images/Octocat.png" align="Github"></a>
+				<h3>Check out my code</h3>
+			</div>
+			<div class="contacts_desc">
+				<a href="resume/thaissakobayashi.pdf"><img src="images/download.png" alt="download" title="Clik to download"></a>
+				<h3>Download my Resume</h3>
 			</div>
 		</section>
 
