@@ -18,11 +18,9 @@
 			});
 
 			$("#menu li").mouseover(function(){
-				$(this).css("color", "#F59631");
-				$(this).css("border-bottom", "2px solid #F59631");
+				$(this).css("border-bottom", "1px solid #Ebe3e0");
 			});
 			$("#menu li").mouseout(function(){
-				$(this).css("color", "#Ebe3e0");
 				$(this).css("border-bottom", "none");
 			});
 
@@ -50,7 +48,7 @@
 
 	    });
 
-	    // home slides (out of document.ready)
+	    // project slides (out of document.ready)
 	    	var slideIndex = 1;
 			showDivs(slideIndex);
 
@@ -74,12 +72,11 @@
 
 	<body>
 		<header>
-			<a href="#home"><img id="logo" src="images/logo.png" alt="Thaissa's Geek logo" title="Thaissa Kobayashi"></a>
-			<h1>Thaissa Kobayashi</h1>
+			<img src="images/title.png">
 			<div id="menu">
 				<ul>
 					<li><a class="unchecked"href="#home">Home</a></li>
-					<li><a class="unchecked"href="#portfolio">Projects</a></li>
+					<li><a class="unchecked"href="#project">Projects</a></li>
  					<li><a class="unchecked" href="#about">About</a></li>
 					<li><a class="unchecked" href="#contacts">Contacts</a></li>
 				</ul>
@@ -87,38 +84,70 @@
 		</header>
 
 		<section id="home">
-			<h2>Web Developer, Interaction Designer, Geek</h2>			
-			<div id="slideShow">
-				<a id="arrow_left" onclick="plusDivs(-1)">❮</a>
-				<img class="mySlides" src="images/technologies.png" alt="Skills">
-				<img class="mySlides hidden" src="images/graph02.svg" alt="Skills">
-<!-- 				<img class="mySlides hidden" src="" alt="Skills">
- -->				<a id="arrow_right" onclick="plusDivs(1)">❯</a>
-			</div>
-			<!-- <h4 class="quote"><q>It's not what we call ourselves that matters, it's the attitude we bring and the skills we can contribute.</q></h4> 
-			<p> - Steve Krug - </p> -->
+			<img src="images/main.png" alt="Web Developer Skills">
 		</section>
 
-		<section id="portfolio">
-			<h2>Cool things I can do</h2>
-			<div id="portfolio_wrapper">
-				<div class="portfolio_desc">
-					<img src="images/project01.png" alt="Chuck &amp; Luke">
-					<!-- <div class="hidden"> -->
-						<h4><span>Chuck &amp; Luke</span></h4>
-						<p>Simple page with 8 images that use jQuery to flip from image 01 (Chuck) to image 02 (Luke) when you put your mouse in and out of the image.</p>
+		<section id="project">
+			<h2>Cool Projects</h2>
+			<div id="slideShow">
+				<a id="arrow_left" onclick="plusDivs(-1)"><</a>
+				<div class="project_wrapper">
+					<div class="project_desc mySlides">
+						<h3>Wine Geek</h3>
+						<p>If you ever wondered the name of that wine you had and couldn't remember, you will love Wine Geek! It's an easy way to keep track of all the wines and wineries you ever had/went, keeping the basic information about all of them so you can have as many as you would like (or not). This was a super fun project to work with and i look forward to keep including new features and maybe more categories.</p>
+						<a href="http://52.38.255.130/#/">Click here to see it!</a>
+						<label id="first_label">HTML5</label>
+						<label>CSS3</label>
+						<label>AngularJS</label>
+						<label>JavaScript</label>
+						<label>MySQL</label>
+						<label>Node.js</label>
+						<label>Express</label>
+					</div>
+					<div class="project_desc mySlides hidden">
+						<h3>Mini Store</h3>
+						<p>This is a cute Mini Store, where you can add products and create orders, showcasing some basic features found in most online stores. The sky is the limit for this kind of project and there's a lot it can be done to turn this Mini Store into a Super Store.</p>
+						<a href="#">Click here to see it!</a>
 						<label>HTML5</label>
 						<label>CSS3</label>
-						<label>jQuery</label>
-					<!-- </div> -->
-				</div>
-				<div class="portfolio_desc">
-					<img src="images/project02.png" alt="Accordion">
-					<h4><span>Accordion</span></h4>
-					<p>Cool page using a combination of jQuery Tabs and Accordion. The main purpose of this project was to get familiar with jQuery UI library and use some of the things combined.</p>
-					<label>HTML5</label>
-					<label>jQuery UI</label>
-				</div>
+						<label>AngularJS</label>
+						<label>JavaScript</label>
+						<label>MongoDB</label>
+						<label>Node.js</label>
+						<label>Express</label>
+					</div>
+					<div class="project_desc mySlides hidden">
+						<h3>Portfolio</h3>
+						<p>This awesome portfolio was a fun and challenging project. It's hard to come up with ways to show whoever is reading this who I am and what I can do. I figure the best way is to keep it simple and focus on showing you all the amazing things I did so far and give a little bit of fun facts too, cause we are not all about work.</p>
+						<a href="#">You are looking at it right now!</a>
+						<label>HTML5</label>
+						<label>CSS3</label>
+						<label>JavaScript</label>
+						<label>JQuery</label>
+					</div>
+					<div class="project_desc mySlides hidden">
+						<h3>Task Slaughter</h3>
+						<p>Task Slaughter was born in an attempt to help organize people's days, keeping track of all the tasks they have through out the day and showing them on Google Maps. The coolest feature about it is being able to text yourself your task, so you can have the address and time ready to go on your phone. This group project was part of a Hackton, being built and deployed in 4 days and won 1st place! Amazing!</p>
+						<a href="http://52.37.60.82/task_slaughter">Click here to see it!</a>
+						<label>HTML5</label>
+						<label>CSS3</label>
+						<label>Python</label>
+						<label>MySQL</label>
+					</div>	
+					<div class="project_desc mySlides hidden">
+						<h3>Survey</h3>
+						<p>This project main goal is to help you create a simple survey question, so people can go and vote in whatever option they think is the best option and you can check the results. Super simple and straight forward app, but can be handy when you need help deciding something. </p>
+						<a href="#">Click here to see it!</a>
+						<label>HTML5</label>
+						<label>CSS3</label>
+						<label>AngularJS</label>
+						<label>JavaScript</label>
+						<label>MongoDB</label>
+						<label>Node.js</label>
+						<label>Express</label>
+					</div>
+				</div>		
+				<a id="arrow_right" onclick="plusDivs(1)">></a>	
 			</div>
 		</section>
 
@@ -126,7 +155,7 @@
 
 		<section id="about">
 			<h2>Beyond work</h2>
-			<p id="about_main">I was born and raised in São Paulo, Brazil. Some people find that hard to believe, because of my asian looks (from my japanese grandparents on my dad's side and my chinese great-grandfather on my mom's side) but that's actually quite common in Brazil, we have one of the largest Japanese colonies outside Japan and a big Chinese community as well. I moved to New York in 2014 and lived there for 1 year, an amazing experience but the sunny and beautiful Bay Area is where I call home now! I love to solve problems in a creative manner and make drawings come to life with elegant coding. Click the icons below to learn few more things about me:</p> 
+			<p id="about_main">I'm a Bay Area resident, that shares the sofa with 2 furry friends and a human when is binge watching Netflix or enjoying a good movie. When I'm not doing that, I'm probably coding at Philz Coffee, while enjoying a Mint Mojito Iced Coffee and a delicious Pumpkin cake (anyone hungry now?). I love to solve problems in a creative manner and make drawings come to life with elegant coding. If you want to know a little bit more, click the icons below:</p> 
 			<ul>
 				<li>
 					<div class="collapse_on">
@@ -134,13 +163,6 @@
 						<h4>I love Legos</h4>
 					</div>
 					<p class="hidden">I'm in love with Legos since I can remember! I had few different ones when I was little but for the past years I've been collecting themes from my favorite movies and cartoons, among them: The Millenium Falcon from Star Wars, the Tumbler from Batman and The Mystery Machine from Scooby-Doo. I hope one day I can have a big room dedicated to them, so I can keep buying more and more!</p>
-				</li>
-				<li>
-					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
-						<h4>Super Mario is still my favorite video game</h4>
-					</div>
-					<p class="hidden">I lost count of how many hours I spent playing this game! Back when I had my Nintendo Entertainment System, blowing my cartridge to make it work, through my Nintendo 64 and most recently, my Wii. Back then, the only break from Mario was to play Street Fighter but I would always go back to my sweet and adventurous Mario. Now, almost 20 years has past...and I still play Super Mario (nonstop) every now and then, not sure if I'll ever get enough!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
@@ -169,25 +191,25 @@
 		<section id="contacts">
 			<h2>Contacts</h2>
 			<div class="contacts_desc">
-				<a href="https://www.linkedin.com/in/thaissa-kobayashi-27941667"><img src="images/linkedin.png" alt="Linkedin"></a>
+				<a href="https://www.linkedin.com/in/thaissa-kobayashi-27941667"><img id="linkedin" src="images/linkedin.png" alt="Linkedin" title="Linkedin"></a>
 				<h3>Connect with me on Linkedin</h3>
 			</div>
 			<div class="contacts_desc">
-				<a href="https://docs.google.com/forms/d/1hQImewTjOaZDKHICiljKIGKlh7cLG0RrdYQtBQOV87Y/edit"><img src="images/email.png" alt="Email"></a>
+				<a href="https://docs.google.com/forms/d/1hQImewTjOaZDKHICiljKIGKlh7cLG0RrdYQtBQOV87Y/edit"><img id="message" src="images/email.png" alt="Send a message" title="Message me"></a>
 				<h3>Send me a message</h3>
 			</div>
 			<div class="contacts_desc">
-				<a href="https://github.com/thaissak"><img src="images/Octocat.png" align="Github"></a>
-				<h3>Check out my code</h3>
+				<a href="https://github.com/thaissak"><img id="github" src="images/Octocat.png" align="Github" title="GitHub"></a>
+				<h3>Check it out my code</h3>
 			</div>
 			<div class="contacts_desc">
-				<a href="resume/thaissakobayashi.pdf"><img src="images/download.png" alt="download" title="Clik to download"></a>
+				<a href="resume/thaissakobayashi.pdf"><img id="download" src="images/download.png" alt="download" title="Clik to download"></a>
 				<h3>Download my Resume</h3>
 			</div>
 		</section>
 
 		<footer>
-			<h5>&copy; 2015 Thaissa Kobayashi</h5>
+			<h5>&copy; 2016 Thaissa Kobayashi</h5>
 		</footer>
 	</body>
 </html>
