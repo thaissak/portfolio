@@ -5,8 +5,10 @@
 		<link rel="stylesheet" href="node_modules/angular-material.min.css">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
 		<title>Thaissa Kobayashi</title>
-		<script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script> 
+		<script type="text/javascript" src="jquery/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script> 
 	    <script type="text/javascript">
 	    $(document).ready(function(){
 	    	// header
@@ -26,11 +28,12 @@
 
 			$(".unchecked").click(function(){
 				$(".unchecked").removeClass("checked");
-				console.log($(this).attr("class"));	
+				// console.log($(this).attr("class"));	
 				$(this).addClass("checked");
-				console.log($(this).attr("class"));
+				// console.log($(this).attr("class"));
 				
 			});
+
 
 			//about
     		$(".collapse_on").click(function(){
@@ -48,24 +51,28 @@
 
 	    });
 
+	    $( function() {
+		    $( "#tabs" ).tabs();
+		} );
+
 	    // project slides (out of document.ready)
-	    	var slideIndex = 1;
-			showDivs(slideIndex);
+	  //   	var slideIndex = 1;
+			// showDivs(slideIndex);
 
-			function plusDivs(n) {
-	  			showDivs(slideIndex += n);
-			}
+			// function plusDivs(n) {
+	  // 			showDivs(slideIndex += n);
+			// }
 
-			function showDivs(n) {
-	  		var i;
-	  		var x = document.getElementsByClassName("mySlides");
-	  		if (n > x.length) {slideIndex = 1}    
-	  		if (n < 1) {slideIndex = x.length} ;
-	  		for (i = 0; i < x.length; i++) {
-	    	x[i].style.display = "none";  
-	  		}
-	  		x[slideIndex-1].style.display = "inline-block";  
-			}
+			// function showDivs(n) {
+	  // 		var i;
+	  // 		var x = document.getElementsByClassName("mySlides");
+	  // 		if (n > x.length) {slideIndex = 1}    
+	  // 		if (n < 1) {slideIndex = x.length} ;
+	  // 		for (i = 0; i < x.length; i++) {
+	  //   	x[i].style.display = "none";  
+	  // 		}
+	  // 		x[slideIndex-1].style.display = "inline-block";  
+			// }
 	 
 	    </script>
 	</head>
@@ -75,8 +82,8 @@
 			<img src="images/title.png">
 			<div id="menu">
 				<ul>
-					<li><a class="unchecked"href="#home">Home</a></li>
-					<li><a class="unchecked"href="#project">Projects</a></li>
+					<li><a class="unchecked" href="#home">Home</a></li>
+					<li><a class="unchecked" href="#project">Projects</a></li>
  					<li><a class="unchecked" href="#about">About</a></li>
 					<li><a class="unchecked" href="#contacts">Contacts</a></li>
 				</ul>
@@ -89,68 +96,40 @@
 
 		<section id="project">
 			<h2>Cool Projects</h2>
-			<div id="slideShow">
-				<a id="arrow_left" onclick="plusDivs(-1)"><</a>
-				<div class="project_wrapper">
-					<div class="project_desc mySlides">
-						<h3>Wine Geek</h3>
-						<p>If you ever wondered the name of that wine you had and couldn't remember, you will love Wine Geek! It's an easy way to keep track of all the wines and wineries you ever had/went, keeping the basic information about all of them so you can have as many as you would like (or not). This was a super fun project to work with and i look forward to keep including new features and maybe more categories.</p>
-						<a href="http://52.38.255.130/#/">Click here to see it!</a>
-						<label id="first_label">HTML5</label>
-						<label>CSS3</label>
-						<label>AngularJS</label>
-						<label>JavaScript</label>
-						<label>MySQL</label>
-						<label>Node.js</label>
-						<label>Express</label>
-					</div>
-					<div class="project_desc mySlides hidden">
-						<h3>Mini Store</h3>
-						<p>This is a cute Mini Store, where you can add products and create orders, showcasing some basic features found in most online stores. The sky is the limit for this kind of project and there's a lot it can be done to turn this Mini Store into a Super Store.</p>
-						<a href="#">Click here to see it!</a>
-						<label>HTML5</label>
-						<label>CSS3</label>
-						<label>AngularJS</label>
-						<label>JavaScript</label>
-						<label>MongoDB</label>
-						<label>Node.js</label>
-						<label>Express</label>
-					</div>
-					<div class="project_desc mySlides hidden">
-						<h3>Portfolio</h3>
-						<p>This awesome portfolio was a fun and challenging project. It's hard to come up with ways to show whoever is reading this who I am and what I can do. I figure the best way is to keep it simple and focus on showing you all the amazing things I did so far and give a little bit of fun facts too, cause we are not all about work.</p>
-						<a href="#">You are looking at it right now!</a>
-						<label>HTML5</label>
-						<label>CSS3</label>
-						<label>JavaScript</label>
-						<label>JQuery</label>
-					</div>
-					<div class="project_desc mySlides hidden">
-						<h3>Task Slaughter</h3>
-						<p>Task Slaughter was born in an attempt to help organize people's days, keeping track of all the tasks they have through out the day and showing them on Google Maps. The coolest feature about it is being able to text yourself your task, so you can have the address and time ready to go on your phone. This group project was part of a Hackton, being built and deployed in 4 days and won 1st place! Amazing!</p>
-						<a href="http://52.37.60.82/task_slaughter">Click here to see it!</a>
-						<label>HTML5</label>
-						<label>CSS3</label>
-						<label>Python</label>
-						<label>MySQL</label>
-					</div>	
-					<div class="project_desc mySlides hidden">
-						<h3>Survey</h3>
-						<p>This project main goal is to help you create a simple survey question, so people can go and vote in whatever option they think is the best option and you can check the results. Super simple and straight forward app, but can be handy when you need help deciding something. </p>
-						<a href="#">Click here to see it!</a>
-						<label>HTML5</label>
-						<label>CSS3</label>
-						<label>AngularJS</label>
-						<label>JavaScript</label>
-						<label>MongoDB</label>
-						<label>Node.js</label>
-						<label>Express</label>
-					</div>
-				</div>		
-				<a id="arrow_right" onclick="plusDivs(1)">></a>	
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Wine Geek</a></li>
+					<li><a href="#tabs-2">Mini Store</a></li>
+					<li><a href="#tabs-3">Portfolio</a></li>
+					<li><a href="#tabs-4">Task Slaughter</a></li>
+					<li><a href="#tabs-5">Survey</a></li>
+				</ul>
+				<div id="tabs-1" class="project_desc mySlides">
+					<p>If you ever wondered the name of that wine you had and couldn't remember, you will love Wine Geek! It's an easy way to keep track of all the wines and wineries you ever had/went, keeping the basic information about all of them so you can have as many as you would like (or not). This was a super fun project to work with and i look forward to keep including new features and maybe more categories.</p>
+					<h3>Build with: HTML5, CSS3, JavaScript, MySQL, Express, AngularJS, Node.js</h3>
+					<a href="http://52.38.255.130/#/">Click here to see it!</a>
+				</div>
+				<div id="tabs-2" class="project_desc mySlides">
+					<p>This is a cute Mini Store, where you can add products and create orders, showcasing some basic features found in most online stores. The sky is the limit for this kind of project and there's a lot it can be done to turn this Mini Store into a Super Store.</p>
+					<h3>Build with: HTML5, CSS3, JavaScript, MongoDB, Express, AngularJS, Node.js</h3>
+					<a href="https://github.com/thaissak/store">Click here to see it!</a>
+				</div>
+				<div id="tabs-3" class="project_desc mySlides">
+					<p>This awesome portfolio was a fun and challenging project. It's hard to come up with ways to show whoever is reading this who I am and what I can do. I figure the best way is to keep it simple and focus on showing you all the amazing things I did so far and give a little bit of fun facts too, cause we are not all about work.</p>
+					<h3>Build with: HTML5, CSS3, JavaScript, jQuery, jQuery UI</h3>
+				</div>
+				<div id="tabs-4" class="project_desc mySlides">
+					<p>Task Slaughter was born in an attempt to help organize people's days, keeping track of all the tasks they have through out the day and showing them on Google Maps. The coolest feature about it is being able to text yourself your task, so you can have the address and time ready to go on your phone. This group project was part of a Hackton, being built and deployed in 4 days and won 1st place! Amazing!</p>
+					<h3>Build with: HTML5, CSS3, Python, MySQL</h3>
+					<a href="http://52.37.60.82/task_slaughter">Click here to see it!</a>
+				</div>	
+				<div id="tabs-5" class="project_desc mySlides">
+					<p>This project main goal is to help you create a simple survey question, so people can go and vote in whatever option they think is the best option and you can check the results. Super simple and straight forward app, but can be handy when you need help deciding something. </p>
+					<h3>Build with: HTML5, CSS3, JavaScript, MongoDB, Express, AngularJS, Node.js</h3>
+					<a href="https://github.com/thaissak/survey">Click here to see it!</a>
+				</div>
 			</div>
 		</section>
-
 		
 
 		<section id="about">
@@ -159,28 +138,28 @@
 			<ul>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
+						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
 						<h4>I love Legos</h4>
 					</div>
 					<p class="hidden">I'm in love with Legos since I can remember! I had few different ones when I was little but for the past years I've been collecting themes from my favorite movies and cartoons, among them: The Millenium Falcon from Star Wars, the Tumbler from Batman and The Mystery Machine from Scooby-Doo. I hope one day I can have a big room dedicated to them, so I can keep buying more and more!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
+						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
 						<h4>Movies are my thing</h4>
 					</div>
 					<p class="hidden">During my free time you can usually find me either watching a movie on TV or at the movie theater. That's probably my favorite thing to do and I can't stay away for too long. I think you can imagine some of the movies I love but, honestly, I'm up for almost all genres and love to watch something that makes me reflect on my own life (thinking on how cool it would be to have superpowers counts right?) and I hate to wait for any sequel...I mean, who likes to wait for a sequel, right?!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
+						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
 						<h4>I want to travel the world</h4>
 					</div>
 					<p class="hidden">I don't know when this started to be a big deal for me, but now that I've been around a bit is just impossible to ignore that there's a whole world out there waiting to be discovered. There's something magical about being around a different culture, contemplating all kinds of views and architectures. So far, Ireland and Greece were my favorite but I'm hoping the next one will be as good or better. </p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon01.png" alt="icon" title="Click me!">
+						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
 						<h4>Fascinated by human behavior, sociology and philosophy</h4>
 					</div>
 					<p class="hidden">I was fortunate to have philosophy classes during High School and that opened a door that I never intend to close. My taste for philosophical books evolved to human behavior and, more specifically, when concerns different cultures, social values and human nature. If I have the time, I will get a new book on the subject and read it nonstop, the last one was Quiet - The Power of Introverts in a World That Can't Stop Talking, by Susan Cain (a must read book in my opinion!).</p>
