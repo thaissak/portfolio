@@ -47,7 +47,7 @@
     				if($(this).siblings().attr("class")=="collapse_on"){
     					console.log($(this).siblings().attr("class"));
     					$(this).siblings().addClass("collapse_off");
-    					$(this).css({"background-color": "#Ebe3e0", "border-radius": "0px 0px 10px 10px", "padding": "1% 1% 1% 2%"});
+    					$(this).css({"background-color": "#Ebe3e0", "border-radius": "10px", "padding": "1% 1% 1% 2%"});
     				}
     				else{
     					$(this).siblings().removeClass("collapse_off");
@@ -108,7 +108,7 @@
 			<img src="images/title.png">
 			<div id="menu">
 				<ul>
-					<li><a class="unchecked" href="#home" id="menu-home">Home</a></li>
+					<li><a class="checked" href="#home" id="menu-home">Home</a></li>
 					<li><a class="unchecked" href="#project" id="menu-projects">Projects</a></li>
  					<li><a class="unchecked" href="#about" id="menu-about">About</a></li>
 					<li><a class="unchecked" href="#contacts" id="menu-contacts">Contacts</a></li>
@@ -119,7 +119,7 @@
 		<section id="home">
 			<!-- <img src="images/main.png" alt="Web Developer Skills"> -->
 			<div class="typewriter">
-				<h3>Full Stack Developer.</h3>
+				<h3>Full Stack Developer</h3>
 			</div>
 			
 		</section>
