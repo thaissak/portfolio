@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="node_modules/angular-material.min.css">
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
@@ -36,6 +35,13 @@
 
 
 			//about
+			$(".about-icon").mouseover(function(){
+				$(this).addClass("animate-icon");
+			});
+			$(".about-icon").mouseout(function(){
+				$(this).removeClass("animate-icon");
+			});
+
     		$(".collapse_on").click(function(){
     			$(this).siblings().toggle(function(){
     				if($(this).siblings().attr("class")=="collapse_on"){
@@ -50,29 +56,49 @@
     		});
 
 	    });
-
+	    // ABOUT ME SECTION
 	    $( function() {
 		    $( "#tabs" ).tabs();
 		} );
 
-	    // project slides (out of document.ready)
-	  //   	var slideIndex = 1;
-			// showDivs(slideIndex);
+	    // MENU SELECTION (SCROLL)
 
-			// function plusDivs(n) {
-	  // 			showDivs(slideIndex += n);
-			// }
+	    function selectMenu(itemId){
+	    	$('#menu > ul > li > a').removeClass('checked');
+	    	$('#' + itemId).addClass('checked');
+	    };
 
-			// function showDivs(n) {
-	  // 		var i;
-	  // 		var x = document.getElementsByClassName("mySlides");
-	  // 		if (n > x.length) {slideIndex = 1}    
-	  // 		if (n < 1) {slideIndex = x.length} ;
-	  // 		for (i = 0; i < x.length; i++) {
-	  //   	x[i].style.display = "none";  
-	  // 		}
-	  // 		x[slideIndex-1].style.display = "inline-block";  
-			// }
+		$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+
+		    var homePosition = $('#home').offset();
+		    var projectPosition = $('#project').offset();
+		    var aboutPosition = $('#about').offset();
+		    var contactsPosition = $('#contacts').offset();
+
+		    if (scroll <= (projectPosition.top+homePosition.top)/2) {
+		        selectMenu('menu-home');
+		    }
+		    
+		    else if (scroll > (projectPosition.top+homePosition.top)/2
+		    	&&
+		    	scroll <= (projectPosition.top+aboutPosition.top)/2) {
+		        selectMenu('menu-projects');
+		    }
+
+		    else if (scroll > (projectPosition.top+aboutPosition.top)/2
+		    	&&
+		    	scroll <= (aboutPosition.top+contactsPosition.top)/2) {
+		        selectMenu('menu-about');
+		    }
+
+		    else  {
+		        selectMenu('menu-contacts');
+		    }
+		    console.log(scroll);
+		});
+
+
 	 
 	    </script>
 	</head>
@@ -82,20 +108,23 @@
 			<img src="images/title.png">
 			<div id="menu">
 				<ul>
-					<li><a class="unchecked" href="#home">Home</a></li>
-					<li><a class="unchecked" href="#project">Projects</a></li>
- 					<li><a class="unchecked" href="#about">About</a></li>
-					<li><a class="unchecked" href="#contacts">Contacts</a></li>
+					<li><a class="unchecked" href="#home" id="menu-home">Home</a></li>
+					<li><a class="unchecked" href="#project" id="menu-projects">Projects</a></li>
+ 					<li><a class="unchecked" href="#about" id="menu-about">About</a></li>
+					<li><a class="unchecked" href="#contacts" id="menu-contacts">Contacts</a></li>
 				</ul>
 			</div>
 		</header>
 
 		<section id="home">
-			<img src="images/main.png" alt="Web Developer Skills">
+			<!-- <img src="images/main.png" alt="Web Developer Skills"> -->
+			<div class="typewriter">
+				<h3>Full Stack Developer.</h3>
+			</div>
+			
 		</section>
 
 		<section id="project">
-			<h2>Cool Projects</h2>
 			<div id="tabs">
 				<ul>
 					<li><a href="#tabs-1">Wine Geek</a></li>
@@ -115,11 +144,11 @@
 					<a href="https://github.com/thaissak/store">Click here to see it!</a>
 				</div>
 				<div id="tabs-3" class="project_desc mySlides">
-					<p>This awesome portfolio was a fun and challenging project. It's hard to come up with ways to show whoever is reading this who I am and what I can do. I figure the best way is to keep it simple and focus on showing you all the amazing things I did so far and give a little bit of fun facts too, cause we are not all about work.</p>
+					<p>This awesome portfolio was a fun and challenging project. It's hard to come up with ways to show whoever is reading this who I am and what I can do.I figured that keeping things  simple and focusing on showing the amazing things I did so far with a little bit of fun facts too, is the way to go!</p>
 					<h3>Build with: HTML5, CSS3, JavaScript, jQuery, jQuery UI</h3>
 				</div>
 				<div id="tabs-4" class="project_desc mySlides">
-					<p>Task Slaughter was born in an attempt to help organize people's days, keeping track of all the tasks they have throughout the day and showing them on Google Maps. The coolest feature about it is being able to text yourself your task, so you can have the address and time ready to go on your phone. This group project was part of a Hackathon, being built and deployed in 4 days and won 1st place! Amazing!</p>
+					<p>Task Slaughter was born in an attempt to help organize people's days, keeping track of all the tasks they have throughout the day and showing them on Google Maps. The coolest feature is the ability to text yourself your task, so you can have the information you need ready to go on your phone. This group project was part of a Hackathon, being built and deployed in 4 days and won 1st place! Amazing!</p>
 					<h3>Build with: HTML5, CSS3, Python, MySQL</h3>
 					<a href="http://52.37.60.82/task_slaughter">Click here to see it!</a>
 				</div>	
@@ -138,28 +167,28 @@
 			<ul>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
+						<img class="about-icon" src="images/icon_contactscopy.png" alt="icon" title="Click me!">
 						<h4>I love Legos</h4>
 					</div>
 					<p class="hidden">I'm in love with Legos since I can remember! I had few different ones when I was little but for the past years I've been collecting themes from my favorite movies and cartoons, among them: The Millenium Falcon from Star Wars, the Tumbler from Batman and The Mystery Machine from Scooby-Doo. I hope one day I can have a big room dedicated to them, so I can keep buying more and more!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
+						<img class="about-icon" src="images/icon_contactscopy.png" alt="icon" title="Click me!">
 						<h4>Movies are my thing</h4>
 					</div>
 					<p class="hidden">During my free time you can usually find me either watching a movie on TV or at the movie theater. That's probably my favorite thing to do and I can't stay away for too long. I think you can imagine some of the movies I love but, honestly, I'm up for almost all genres and love to watch something that makes me reflect on my own life (thinking on how cool it would be to have superpowers counts right?) and I hate to wait for any sequel...I mean, who likes to wait for a sequel, right?!</p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
+						<img class="about-icon" src="images/icon_contactscopy.png" alt="icon" title="Click me!">
 						<h4>I want to travel the world</h4>
 					</div>
 					<p class="hidden">I don't know when this started to be a big deal for me, but now that I've been around a bit is just impossible to ignore that there's a whole world out there waiting to be discovered. There's something magical about being around a different culture, contemplating all kinds of views and architectures. So far, Ireland and Greece were my favorite but I'm hoping the next one will be as good or better. </p>
 				</li>
 				<li>
 					<div class="collapse_on">
-						<img src="images/icon_contacts.png" alt="icon" title="Click me!">
+						<img class="about-icon" src="images/icon_contactscopy.png" alt="icon" title="Click me!">
 						<h4>Fascinated by human behavior, sociology and philosophy</h4>
 					</div>
 					<p class="hidden">I was fortunate to have philosophy classes during High School and that opened a door that I never intend to close. My taste for philosophical books evolved to human behavior and, more specifically, when concerns different cultures, social values and human nature. If I have the time, I will get a new book on the subject and read it nonstop, the last one was Quiet - The Power of Introverts in a World That Can't Stop Talking, by Susan Cain (a must read book in my opinion!).</p>
@@ -168,7 +197,7 @@
 		</section>
 
 		<section id="contacts">
-			<h2>Contacts</h2>
+			<h2>Best ways to find me!</h2>
 			<div class="contacts_desc">
 				<a href="https://www.linkedin.com/in/thaissa-kobayashi-27941667"><img id="linkedin" src="images/linkedin.png" alt="Linkedin" title="Linkedin"></a>
 				<h3>Connect with me on Linkedin</h3>
