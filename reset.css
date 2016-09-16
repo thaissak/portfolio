@@ -10,8 +10,12 @@ header, menu, nav, section, summary, time,audio, video
 	border: 0;
 }
 
+body{
+	width: 100%;
+}
+
 section{
-	padding: 8% 0%;
+	padding-top: 8%;
 	/*box-sizing: border-box;*/
 }
 
