@@ -14,11 +14,6 @@ body{
 	width: 100%;
 }
 
-section{
-	padding-top: 8%;
-	/*box-sizing: border-box;*/
-}
-
 ol, ul {
 	list-style: none;
 }
