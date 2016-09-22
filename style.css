@@ -252,6 +252,7 @@ header img{
 	text-align: justify;
 }
 
+
 .collapse_on{
 	width: 79%;
 	margin: 0% 8% 0% 11%;
@@ -400,9 +401,14 @@ footer{
 }
 
 @media (max-width: 1280px) and (orientation: portrait){
+	body{
+		background-image: url("images/main.jpg");
+		background-size: 107%;
+		background-repeat: repeat;
+	}
 
 	h2{
-		font-size: 1.4em;
+		font-size: 200%;
 	}
 
 	#menu{
@@ -415,12 +421,11 @@ footer{
 
 	#home{
 		height: 960px;
-		background-repeat: repeat;
 		padding-top: 15%;
 	}
 
 	#home h2{
-		font-size: 1.4em;
+		font-size: 300%;
 	}
 
 	#mobileOnly{
@@ -435,13 +440,12 @@ footer{
 	.home_box{
 		width: 29%;
     	padding: 3%;
-    	line-height: 3em;
+    	line-height: 5em;
 	}
 
 	#project{
-		height: 445px;
-		background-size: 150%;
-		background-position-x: -100px;
+		height: 960px;
+		background-image: inherit;
 	}
 
 	.hideMobile{
@@ -449,42 +453,54 @@ footer{
 	}
 
 	#project #tabs ul li a{
-		font-size: 0.7em;
+		font-size: 150%;
 	}
 
 	#project #tabs .project_desc p, #project #tabs .project_desc h3, #project #tabs .project_desc a{
-		font-size: 0.7em;
+		font-size: 150%;
 		line-height: 2em;
 	}
 
 	#about{
-		height: 600px;
-		background-size: 155%;
-		background-position-x: -100px;
+		height: 960px;
+		background-image: inherit;
 	}
 
 	#about p{
-		font-size: 0.8em;
+		font-size: 150%;
 		line-height: 2em;
 	}
 
 	#about li h4{
-		font-size: 0.9em;
+		font-size: 170%;
 	}
 
 	#about li p{
-		font-size: 0.8em;
+		font-size: 150%;
 	}
 
 	#about img{
 		width: 5%;
 	}
 
+	.collapse_on{
+		width: 90%;
+	}
+
+	#mobileBackground{
+		background-color: rgba(235, 227, 224, 0.7);
+		width: 97%;
+		border-radius: 10px;
+		margin: 0 auto;
+	}
+
 	#contacts{
-		width: 75%;
+		width: 78%;
 		margin-top: 12%;
     	margin-bottom: 25%;
     	height: auto;
+    	box-shadow: none;
+		background-color: rgba(187, 197, 221, 0.8);
 	}
 
 	#contacts h2{
@@ -494,10 +510,11 @@ footer{
 
 	.contacts_desc{
 		margin-top: 10%;
+		width: 75%;
 	}
 
 	.contacts_desc h3{
-		font-size: 1em;
+		font-size: 200%;
 	}
 
 	#linkedin{
