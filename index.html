@@ -28,9 +28,7 @@
 
 			$(".unchecked").click(function(){
 				$(".unchecked").removeClass("checked");
-				// console.log($(this).attr("class"));	
 				$(this).addClass("checked");
-				// console.log($(this).attr("class"));
 				
 			});
 
@@ -48,7 +46,7 @@
     				if($(this).siblings().attr("class")=="collapse_on"){
     					console.log($(this).siblings().attr("class"));
     					$(this).siblings().addClass("collapse_off");
-    					$(this).css({"background-color": "#Ebe3e0", "border-radius": "10px", "padding": "1% 1% 1% 2%"});
+    					$(this).css({"background-color": "rgba(235, 227, 224, 0.7)", "border-radius": "10px", "padding": "1% 1% 1% 2%"});
     				}
     				else{
     					$(this).siblings().removeClass("collapse_off");
@@ -121,6 +119,7 @@
 		<section id="home">
 			<div class="home_box">
 				<h2>Hello there! I'm Thaissa, a</h2>
+				<h2 id="mobileOnly">Full Stack Web Developer</h2>
 				<div class="typewriter">
 					<h2>Full Stack Web Developer</h2>
 				</div>
@@ -135,7 +134,7 @@
 					<li><a href="#tabs-2">Mini Store</a></li>
 					<li><a href="#tabs-3">Portfolio</a></li>
 					<li><a href="#tabs-4">Task Slaughter</a></li>
-					<li><a href="#tabs-5">Survey</a></li>
+					<li><a class="hideMobile" href="#tabs-5">Survey</a></li>
 				</ul>
 				<div id="tabs-1" class="project_desc mySlides">
 					<p>If you ever wondered the name of that wine you had and couldn't remember, you will love Wine Geek! It's an easy way to keep track of all the wines and wineries you ever had/went, keeping the basic information about all of them so you can have as many as you would like (or not). This was a super fun project to work with and i look forward to keep including new features and maybe more categories.</p>
@@ -214,7 +213,7 @@
 				<a href="https://github.com/thaissak"><img id="github" src="images/Octocat.png" align="Github" title="GitHub" target="_blank"></a>
 				<h3>Check it out my code</h3>
 			</div>
-			<div class="contacts_desc">
+			<div class="contacts_desc hideMobile">
 				<a href="resume/thaissa_kobayashi.pdf"><img id="download" src="images/download.png" alt="download" title="Clik to download" target="_blank"></a>
 				<h3>Download my Resume</h3>
 			</div>
